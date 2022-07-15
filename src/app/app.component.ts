@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
+import { AppState } from './app.reducers';
 import { incrementar, decrementar } from './contador/contador.actions';
 
-export interface AppState {
-  contador: number
-}
 
 @Component({
   selector: 'app-root',
